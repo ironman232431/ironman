@@ -1,0 +1,67 @@
+
+HackerRank Home
+|
+Prepare
+Certify
+Compete
+Search
+
+
+|
+Switch to..
+
+PreparePythonStringsWhat's Your Name?
+What's Your Name?
+155 more points to get your gold badge!
+Rank: 569230|Points: 245/400
+Python
+Problem
+Submissions
+Leaderboard
+Discussions
+Editorial
+You made this submission 2 months ago.
+Score:0.00Status:Compilation error
+Submitted Code
+Language: PyPy3
+Open in editor
+1
+#
+2
+# Complete the 'print_full_name' function below.
+3
+#
+4
+# The function is expected to return a STRING.
+5
+# The function accepts following parameters:
+6
+#  1. STRING first
+7
+#  2. STRING last
+8
+#
+9
+​
+10
+def print_full_name(first, last):
+11
+    # Write your code here
+12
+​
+13
+​
+Compile Message
+
+Sorry: IndentationError: expected an indented block after function definition on line 10 (Solution.py, line 14)
+Exit Status
+
+1
+Need Help?
+View discussions
+View editorial
+View top submissions
+BlogScoringEnvironmentFAQAbout UsHelpdeskCareersTerms Of ServicePrivacy Policy
+
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. Privacy Policy.
+Cookies Settings Accept All Cookies
