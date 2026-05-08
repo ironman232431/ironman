@@ -1,0 +1,9 @@
+from collections import Counter
+
+if __name__ == '__main__':
+    s = input().strip()
+    s_sorted = sorted(s)
+    counts = Counter(s_sorted)
+    top_three = counts.most_common(3)
+    for char, count in top_three:
+        print(f"{char} {count}")
