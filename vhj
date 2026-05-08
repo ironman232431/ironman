@@ -1,0 +1,40 @@
+import sys
+
+def solve():
+    try:
+        line1 = sys.stdin.readline()
+        if not line1:
+            return
+        t = int(line1.strip())
+    except ValueError:
+        return
+
+    for _ in range(t):
+        n = int(sys.stdin.readline().strip())
+        cubes = list(map(int, sys.stdin.readline().split()))
+        
+        left = 0
+        right = n - 1
+        last_picked = float('inf')
+        possible = True
+        
+        while left <= right:
+            if cubes[left] >= cubes[right]:
+                current = cubes[left]
+                left += 1
+            else:
+                current = cubes[right]
+                right -= 1
+            if current > last_picked:
+                possible = False
+                break
+            
+            last_picked = current
+            
+        if possible:
+            print("Yes")
+        else:
+            print("No")
+
+if __name__ == "__main__":
+    solve()
