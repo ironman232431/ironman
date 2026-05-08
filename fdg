@@ -1,0 +1,20 @@
+from collections import Counter
+
+if __name__ == '__main__':
+    s = input().strip()
+    
+    # 1. Sort the string alphabetically first. 
+    # This ensures that Counter will maintain alphabetical order for ties.
+    s_sorted = sorted(s)
+    
+    # 2. Count frequencies of each character
+    counts = Counter(s_sorted)
+    
+    # 3. Get the top 3 most common elements.
+    # most_common() returns them in descending order of frequency.
+    # Because we gave it a sorted list, it breaks ties alphabetically.
+    top_three = counts.most_common(3)
+    
+    # 4. Print results
+    for char, count in top_three:
+        print(f"{char} {count}")
